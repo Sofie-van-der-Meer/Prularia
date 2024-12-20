@@ -1,55 +1,10 @@
-# Basic version
+![alt](public/assets/images/logo/Logo_tekst_light.svg)
 
-----
-*Deze is de meest basic versie. Weinig of geen 
-voorgeprogrammeerde functionaliteit. 
-Dit template biedt eigenlijk enkel een 
-folderstructuur die gebruikt kan worden 
-voor het scrumproject.*
-
-## Folders
-
-------------------
-
-### Root folder
-
-- hier komen de controllers
-- index.php: dient om de user naar de homepagina te sturen, heeft verder geen functie [info](index.php)
-- database.sql: hierin kan het script voor het maken van de database worden bewaard [info](database.sql)
-- bootstrap.php = autoloader [info](bootstrap.php)
-- .gitignore [info](.gitignore)
-
-### App
-
-- .htaccess : App folder mag niet publiek toegankelijk zijn [info](App/.htaccess)
-
-### App/Data 
-
-- Lege folder [info](App/Data/readme.md)
-
-### App/Entities
-
-- Lege folder [info](App/Entities/readme.md)
-
-### App/Exceptions
-
-- Lege folder [info](App/Exceptions/readme.md)
-
-### App/Services
-
-- Lege folder [info](App/Services/readme.md)
-
-### App/Views
-
-Hier bevinden zich enkele files die als voorbeeld kunnen dienen voor andere pagina’s.
-De head en navbar van deze voorbeeldpagina vind je terug in “App/Views/components”. 
-[info](App/Views/readme.md)
-
-### public
-
-Deze folder bevat JavaScript, css en img (afbeeldingen) en moet publiek toegankelijk zijn. 
-[info](public/readme.md)
-
-- [css](public/css/readme.md)
-- [js](public/js/readme.md)
-- [img](public/img/readme.md)
+# SCRUM PROJECT - WEBSHOP PRULARIA
+As a team of 9 developers, we made a webshop to learn the principles of scrum agile working
+## About The Project
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde officiis nemo blanditiis magni voluptate itaque iusto eligendi nesciunt, consequatur nihil fugiat tenetur reiciendis. Itaque, officia ut. Repellendus, quam. Sed reprehenderit unde vel exercitationem non possimus! Eveniet molestiae iusto impedit quae, aperiam iste, repellat ut consequatur cumque magni architecto ex quam.
+## Build With
+PHP | HTML | CSS | JS | Bootstrap
+## Contributors
+[Janice de Miranda V. Vilela](https://github.com/janicemv) | [Oliver Teijsen](https://github.com/TeijsenOliverVDAB) | [Jens Clerebout](https://github.com/jensclerebout) | [Mathis Angellier](https://github.com/MathisAngellier) | [Johan Verbinnen](https://github.com/jvcampus)  | [Janosh Taerwe](https://github.com/JanoshT) | [Jelle Swartebroekx](https://github.com/JelleSwart) | [Kara Van De Velde](https://github.com/karavdv) | [Sofie van der Meer](https://github.com/Sofie-van-der-Meer)
