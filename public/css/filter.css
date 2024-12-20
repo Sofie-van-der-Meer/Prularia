@@ -1,0 +1,41 @@
+.filter {
+    border: 2px solid var(--color-border);
+    border-radius: 6px;
+    grid-area: filter;
+    padding: 1rem;
+    background-color: var(--color-background-alt);
+}
+h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--pastel-green-dark);
+}
+
+/* ul */
+.list {
+    margin-left: 1rem;
+}
+.list button {
+    padding: 3px 6px;
+}
+
+.filter-item {
+    margin-bottom: 1rem;
+}
+.list-item-filter,
+.filter-btn {
+    margin-bottom: 0.3rem;
+}
+.list-item-category {
+    font-weight: bold;
+}
+
+.list-item-subcategory {
+    font-weight: 400;
+}
+.list-item-subcategory:hover {
+    font-weight: 600;
+}
+label:hover i {
+    color: var();
+}

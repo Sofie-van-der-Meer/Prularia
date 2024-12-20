@@ -1,0 +1,19 @@
+.loadOtherPageProducts {
+    grid-area: page-nav;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#current-page {
+    font-weight: bold;
+}
+.btn_arrow {
+    width: 30px;
+    height: 30px;  
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

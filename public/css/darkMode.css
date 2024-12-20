@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Dancing+Script:wght@400..700&display=swap");
+
+:root {
+  /* Base colors */
+  --pastel-green: #abd7a8;
+  --pastel-green-dark: #8ab987;
+  --pastel-purple: #cea8d8;
+  --pastel-yellow: #e2e898;
+  --pastel-blue: #93beef;
+  --pastel-red: #d7a8ab;
+
+  /* Light Theme Colors */
+  --color-text: #111510;
+  --color-background: #ffffff;
+  --color-background-alt: #f5f9f6;
+  --color-background-accent: #e8f5e9;
+  --color-border: var(--pastel-green);
+  --color-button: var(--pastel-green);
+  --color-button-text: #111510;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+
+  /* Social Media Colors */
+  --instagram-gradient: linear-gradient(45deg, #ffb6c1 0%, #ffa4b6 25%, #ff92aa 50%, #ff7f9e 75%, #ff6b91 100%);
+  --whatsapp: #98e5b0;
+  --twitter: #a7d8ff;
+  --facebook: #b6d0ff;
+  --etsy: #ff964f;
+
+  /* Typography */
+  font-family: "Catamaran", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Dark Theme Colors */
+[data-theme="dark"] {
+  --color-text: #ffffff;
+  --color-background: #1a1a1a;
+  --color-background-alt: #2d2d2d;
+  --color-background-accent: #393d47;
+  --color-border: var(--pastel-green-dark);
+  --color-button: var(--pastel-green-dark);
+  --color-button-text: #ffffff;
+  --color-shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.subtitle {
+  font-family: "Dancing Script", serif;
+}
+
+h3 {
+  color: var(--color-text);
+  font-size: 3rem;
+}
+
+/* Layout */
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  background-color: var(--color-background-accent);
+  color: var(--color-text);
+}
+
+/* Cards */
+.card {
+  background-color: var(--color-background-accent);
+  border-bottom: 2px solid var(--color-border);
+  border-right: 1.5px solid var(--color-border);
+  border-radius: 0.8rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-body {
+  color: var(--color-text);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px var(--color-shadow);
+}
+
+/* Buttons */
+.btn {
+  background-color: var(--color-button) !important;
+  color: var(--color-button-text);
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--pastel-green-dark) !important;
+}
+
+.btn-secundary {
+  background-color: transparent !important;
+  border: 2px solid var(--color-button);
+}
+
+/* Promotion Section */
+.promotions-section {
+  background: linear-gradient(135deg, var(--color-button) 0%, var(--pastel-green) 100%);
+  box-shadow: 0 4px 15px var(--color-shadow);
+}
+
+.promotion-card {
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 8px var(--color-shadow);
+}
+
+.promotion-card:hover {
+  background: var(--color-background-alt);
+  box-shadow: 0 6px 12px var(--color-shadow);
+}
+
+.promotion-card h3 {
+  color: var(--color-button);
+}
+
+.promotion-card p {
+  color: var(--color-text);
+}
+
+/* Cookie Modal */
+.cookie-modal {
+  background: var(--color-background);
+  box-shadow: 0 0.5rem 2rem var(--color-shadow);
+}
+
+.cookie-category {
+  border-color: var(--color-border);
+}
+
+.cookie-icon {
+  color: var(--color-button);
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  background: var(--color-background-alt);
+  border-radius: 20px;
+  padding: 5px;
+  width: 65px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle i {
+  color: var(--color-text);
+  font-size: 14px;
+  z-index: 1;
+}
+
+.theme-toggle::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background: var(--color-button);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+[data-theme="dark"] .theme-toggle::after {
+  transform: translateX(35px);
+}
+
+/* Social Icons */
+.social-icons li a .fa-brands {
+  color: var(--color-button);
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--color-background-alt);
+}
+
+/* Animation Keyframes */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translate(-50%, 100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .promotion-card {
+    margin-bottom: 1rem;
+  }
+}

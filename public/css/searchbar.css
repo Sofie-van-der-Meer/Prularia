@@ -1,0 +1,134 @@
+:root {
+  --dark-bg: #111510;
+  --dark-text: #eef7ed;
+  --light-bg: #eef7ed;
+  --light-text: #111510;
+  --input-border: #abd7a8;
+  --button-bg: #8ab987;
+  --button-hover-bg: #abd7a8;
+  --button-text: #ffffff;
+}
+
+body {
+  font-family: "Catamaran", serif;
+  font-family: "Catamaran", ;
+
+}
+
+.search-bar {
+  grid-area: search;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 20px; */
+  color: var(--light-text);
+}
+@media screen and (min-width: 990px) {
+  .search-bar {
+      align-items: start;
+  }
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+}
+
+.search-input {
+  position: relative;
+  width: 0;
+  height: 40px;
+  padding: 8px 16px;
+  border: 2px solid var(--input-border);
+  border-radius: 20px;
+  background-color: var(--light-bg);
+  color: var(--light-text);
+  opacity: 0;
+  visibility: hidden;
+  transition: width 0.3s, opacity 0.3s, visibility 0.3s;
+}
+
+.search-button {
+  width: 40px;
+  height: 40px;
+  background-color: var(--button-bg);
+  border: none;
+  border-radius: 25px;
+  color: var(--button-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+.search-container:hover .search-input {
+  width: 200px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.search-dropdown {
+  position: relative;
+  top: 0;
+  left: -1%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-height: 100px;
+  overflow-y: auto;
+  width: 200px;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-dropdown-item {
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-dropdown-item:hover {
+  background-color: #f9f9f9;
+}
+
+.search-dropdown-item .title {
+  font-weight: bold;
+}
+
+.search-dropdown-item .price {
+  color: green;
+}
+
+
+/* Tablet */
+@media (min-width: 768px) {}
+
+/* Laptop */
+@media (min-width: 992px) {
+  .search-input {
+    width: 200px;
+    opacity: 1;
+    visibility: visible;
+    transition: none;
+  }
+
+  .search-container:hover .search-input {
+    width: 200px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+}
+
+/* Larger screen */
+@media (min-width: 1200px) {}

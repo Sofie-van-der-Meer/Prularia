@@ -1,0 +1,59 @@
+.thankyou-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.order-success {
+    text-align: center;
+    color: var(--pastel-green-dark);
+    margin-bottom: 2rem;
+}
+
+.order-details {
+    border: 1px solid #eee;
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+}
+
+.detail-group {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    margin-bottom: 1rem;
+}
+
+.detail-label {
+    font-weight: bold;
+    color: #666;
+}
+
+.detail-value {
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 2rem;
+}

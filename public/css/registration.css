@@ -1,0 +1,446 @@
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Zet de rijen onder elkaar */
+  gap: 15px; /* Ruimte tussen de rijen */
+}
+
+.register-input {
+  width: 200px;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid var(--input-border);
+  border-radius: 10px;
+  color: var(--light-text);
+}
+
+/* Flex styling voor rijen in fieldset */
+.form-row {
+  display: flex;
+  justify-content: start;
+  align-items: center; /* Labels en inputs uitlijnen */
+  text-align: center;
+  gap: 10px; /* Ruimte tussen label en input */
+  flex-wrap: wrap;
+}
+
+/* Labels rechts uitlijnen */
+label {
+  flex: 0 0 120px; /* Vaste breedte voor labels */
+  text-align: start;
+}
+.label-long {
+  flex: 0 0 180px;
+}
+
+/* select.register-input {
+  width: 250px;
+  box-sizing: border-box;
+} */
+
+
+input, select {
+  flex: 1; /* Laat inputvelden flexibel schalen */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px; /* Zorgt voor schaalbaarheid */
+}
+
+/* .showPass-label {
+  padding-top: 10px;
+  text-align: left;
+  min-width: fit-content;
+  flex: 0 0 12px;
+} */
+
+input[type="checkbox"] {
+  max-width: 10px;
+  padding-top: 10px;
+  text-align: left;
+  margin-left: 140px; 
+}
+
+.form-group {
+  padding-top: 10px;
+  display: contents;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.info {
+  color: #ba4c53;
+  font-size: 0.8em;
+  padding-left: 1.5em;
+  padding: 1em;
+  align-items: center;
+  margin-left: 120px;
+}
+
+.info li {
+  margin-left: 1.6em;
+}
+@media screen and (max-width: 700px) {
+  select.register-input {
+    width: 200px;
+  }
+  input[type="checkbox"] {
+    margin-left: 0;
+  }
+  .info {
+    margin-left: 10px;
+  }
+}
+.password-strength {
+  color: grey;
+}
+.power-container {
+  background-color: #2e424d;
+  width: 50%;
+  height: 15px;
+  border-radius: 5px;
+  margin: 1em;
+}
+
+.power-container #power-point {
+  background-color: #d73f40;
+  width: 1%;
+  height: 100%;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Radio Button */
+
+/* General Styles for the Form */
+#account-type {
+  margin: 2em auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: inline-block; 
+}
+
+@media screen and (min-width: 700px) {
+  #account-type {
+    margin-left: 130px;
+    /* margin-right: 50px; */
+    width: 270px;
+  }
+}
+
+
+/* Label Styling */
+#account-type label {
+  font-size: 1.1rem;
+  color: #333;
+  display: inline-block;
+  margin: 10px 0;
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+}
+
+/* Custom Radio Button Styling */
+#account-type input[type="radio"] {
+  display: none; /* Hide the native radio button */
+}
+
+#account-type label::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+/* Checked State for Radio Buttons */
+#account-type input[type="radio"]:checked + label::before {
+  background-color: #4caf50;
+  border-color: #4caf50;
+  box-shadow: inset 0 0 0 4px #fff;
+}
+
+/* On Hover */
+#account-type label:hover::before {
+  border-color: #4caf50;
+}
+
+.delivery-checkbox-container {
+  align-items: start;
+}
+
+select,
+option {
+  font-family: system-ui;
+  /* text-overflow: ellipsis; */
+  max-width: 300px;
+}
+select option {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.password-strength {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  #account-type {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  #account-type label {
+    font-size: 1rem;
+  }
+
+  #account-type label::before {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+}
+
+/* Laptop */
+@media (min-width: 992px) {
+}
+
+/* Larger screen */
+@media (min-width: 1200px) {
+}
+
+/* FROM LOGIN BRANCH 03/12/24 */
+
+:root {
+  /* Modern color palette */
+  --primary-color: #abd7a8;
+  --primary-hover: #8ab987;
+  --secondary-color: #6b7280;
+  --success-color: #059669;
+  --danger-color: #dc2626;
+  --background-light: #f9fafb;
+  --background-dark: #111827;
+  --text-light: #1f2937;
+  --text-dark: #f9fafb;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+
+  /* Transitions */
+  --transition-all: all 0.3s ease;
+
+  /* Font */
+  font-family: "Catamaran", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.registration-container {
+  
+  width: 30rem;
+  margin: 8rem auto 19rem;
+  padding: 2.5rem 2.5rem 5rem;
+  padding: 2.5rem;
+  border-radius: 16px;
+  background: var(--background-light);
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition-all);
+  z-index: 1;
+}
+@media screen and (max-width: 700px) {
+  .registration-container {
+    width: 80vw;
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .registration-container {
+    background: var(--background-dark);
+    color: var(--text-dark);
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, var(--primary-color), #818cf8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-title h2 {
+  font-weight: 600px;
+  font-size: 2em;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: var(--transition-all);
+  background: white;
+  font-family: "Catamaran", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  .form-group input {
+    background: #1f2937;
+    border-color: #374151;
+    color: var(--text-dark);
+  }
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.error {
+  background: #fee2e2;
+  border-left: 4px solid var(--danger-color);
+  color: var(--danger-color);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .error {
+    background: rgba(220, 38, 38, 0.1);
+  }
+}
+
+button.primary-button {
+  width: 100%;
+  padding: 0.875rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition-all);
+  font-family: "Catamaran", sans-serif;
+  z-index: 2;
+}
+
+button.primary-button:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+.action-links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.action-links a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: var(--transition-all);
+}
+
+.action-links a:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+/* Animated background for the container */
+.registration-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.registration-container::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent 0%, rgba(171, 215, 168, 0.15) 50%, /* Gebruikt nu je pastel-green met 15% opacity */ transparent 100%);
+  animation: gradient-animation 8s linear infinite;
+  z-index: -1;
+}
+
+@keyframes gradient-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.form-group,
+h1,
+.error,
+.action-links {
+  position: relative;
+  z-index: 2;
+}

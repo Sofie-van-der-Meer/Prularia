@@ -1,0 +1,61 @@
+/* Default Light Theme Hover Box Styles */
+.hover-box {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    background:var(--color-background-alt);
+    color: #000;
+    border: 1px solid var(--color-border);
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.hover-box img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.quantity-control button {
+    /* background-color: var(--pastel-blue-dark); */
+    /* color: #fff; */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.quantity-control button:hover {
+    /* background-color: var(--pastel-blue-very-dark); */
+}
+
+.quantity-control input {
+    text-align: center;
+    width: 50px;
+    margin: 0 10px;
+}
+
+.total-price {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--color-text);
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
