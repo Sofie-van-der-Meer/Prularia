@@ -1,7 +1,7 @@
 ![alt](public/assets/images/logo/Logo_tekst_light.svg)
 
 # SCRUM PROJECT - WEBSHOP PRULARIA
-As a team of 9 developers, we made a webshop to learn the principles of scrum agile working
+As a team of 9 developers, we made a webshop to learn the principles of Scrum Agile methodology
 ## About The Project
 ***Introduction:***
 Developing a webshop for a client provided a unique opportunity to apply the Scrum Agile methodology in practice. Together with eight other student developers from across Flanders, we worked on this project, where we not only enhanced our technical skills but also learned how to collaborate effectively as a team. The challenge was not only about building the webshop, but also understanding and applying the Scrum approach.
